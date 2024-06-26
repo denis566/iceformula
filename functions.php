@@ -53,28 +53,16 @@ function my_template($template)
         $template = get_template_directory() . '/template-page/front-page.php';
         return $template;
     }
-    if (is_archive('new')  ) {
-        $template = get_template_directory() . '/template-page/page-cliets.php';
-        // $template = get_template_directory() . '/template-page/page-news.php';
 
-        return $template;
-    }
-
-    if (!is_archive(93) && !is_page(88) && !is_page(91) ) {
-       
+    if (is_archive()) {
         $template = get_template_directory() . '/template-page/page-archive.php';
         return $template;
     }
 
-    if (!is_page(91) && !is_page(93)){
-        $template = get_template_directory() . '/template-page/page-content.php';
-        return $template;
-    }
-    if (is_singular() && !is_page(91) && !is_page(93) ) {
+    if (is_singular()) {
         $template = get_template_directory() . '/template-page/page-single.php';
         return $template;
     }
-    
 
     return $template;
 }
