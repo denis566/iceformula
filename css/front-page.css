@@ -1,0 +1,65 @@
+.header {
+    position: fixed;
+    background-color: transparent;
+}
+
+.logo {
+    background: url("/wp-content/themes/iceformula/assets/images/front-logo.svg") no-repeat;
+}
+
+.nav {
+    color: rgba(255, 255, 255, 1);
+}
+
+.nav:after {
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.request__link {
+    background-color: rgba(255, 255, 255, 1);
+    color: rgba(0, 0, 0, 1);
+}
+
+.menu {
+    color: rgba(255, 255, 255, 1);
+}
+
+.menu:after {
+    background-color: transparent;
+}
+
+/*Start Main Form*/
+
+.main-form {
+    background-color: rgba(0, 152, 215, 1);
+    margin-bottom: 7%;
+}
+
+.main-form__image {
+    position: absolute;
+    max-width: 70%;
+    right: -5%;
+    bottom: -15%;
+    top: unset;
+}
+
+/*End Main Form*/
+
+/*Start Partners*/
+
+.partners__items {
+    display: flex;
+    justify-content: space-between;
+
+    margin: 0 -2%;
+}
+
+.partners__item {
+    padding: 0 2%;
+}
+
+.partners__item img {
+    object-fit: contain;
+}
+
+/*End Partners*/
